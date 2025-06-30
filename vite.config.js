@@ -1,9 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { fileURLToPath, URL } from 'node:url';
-// https://vite.dev/config/
-// Always use a relative path for better compatibility with Android WebView
-const base = './';
+// Vite configuration for Vercel
 export default defineConfig({
     plugins: [react()],
     resolve: {
@@ -11,7 +9,7 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url)),
         },
     },
-    base: base,
+    base: '/-questionario-ciencias/',
     build: {
         outDir: 'dist',
         assetsDir: 'assets',
