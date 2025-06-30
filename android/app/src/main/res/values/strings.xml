@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Cuestionario Ciencias</string>
+    <string name="title_activity_main">Cuestionario Ciencias</string>
+    <string name="package_name">com.didiercolo.questionario</string>
+    <string name="custom_url_scheme">com.didiercolo.questionario</string>
+</resources>

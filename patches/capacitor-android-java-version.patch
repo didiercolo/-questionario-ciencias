@@ -1,0 +1,14 @@
+diff --git a/node_modules/@capacitor/android/capacitor/build.gradle b/node_modules/@capacitor/android/capacitor/build.gradle
+index abc1234..def5678 100644
+--- a/node_modules/@capacitor/android/capacitor/build.gradle
++++ b/node_modules/@capacitor/android/capacitor/build.gradle
+@@ -1,5 +1,9 @@
+ apply plugin: 'com.android.library'
+ 
++android.compileOptions {
++    sourceCompatibility JavaVersion.VERSION_17
++    targetCompatibility JavaVersion.VERSION_17
++}
+ android {
+     namespace 'com.getcapacitor'
+     compileSdkVersion rootProject.ext.compileSdkVersion

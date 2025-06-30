@@ -1,4 +1,12 @@
 import { useState, useEffect } from 'react';
+
+// Enable WebView debugging
+if (window.AndroidBridge) {
+  console.log('AndroidBridge is available');
+  window.AndroidBridge.setWebContentsDebuggingEnabled(true);
+}
+
+console.log('App component is loading...');
 import { getRandomQuestions } from './data/quizData';
 import type { Question } from './data/quizData';
 import { QuizIntro, QuizQuestion, QuizResults } from './components';
@@ -37,13 +45,19 @@ function App() {
   }, [isDarkMode]);
 
   const startQuiz = () => {
+    console.log('Starting quiz...');
+    try {
     const selectedQuestions = getRandomQuestions(QUESTIONS_PER_QUIZ);
     setQuestions(selectedQuestions);
     setCurrentQuestionIndex(0);
     setAnswers([]);
     setScore(0);
-    setQuizStatus('in_progress');
-    setQuizStarted(true);
+      setQuizStatus('in_progress');
+      setQuizStarted(true);
+      console.log('Quiz started with questions:', selectedQuestions);
+    } catch (error) {
+      console.error('Error starting quiz:', error);
+    }
   };
 
   const handleAnswer = (answer: string | string[]) => {
@@ -80,6 +94,8 @@ function App() {
     setIsDarkMode(!isDarkMode);
   };
 
+  console.log('Rendering App component, status:', quizStatus);
+  
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <div className="container mx-auto px-4 py-8">
