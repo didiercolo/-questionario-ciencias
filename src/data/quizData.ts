@@ -35,6 +35,102 @@ export const quizData: Question[] = [
   { id: 23, question: 'Las aves tienen ___ que mantienen su cuerpo caliente.', type: 'fill_in', correctAnswer: ['plumas'] },
   { id: 24, question: 'Los peces respiran por ___.', type: 'fill_in', correctAnswer: ['branquias'] },
   { id: 25, question: 'La ___ sujeta la yema dentro del huevo.', type: 'fill_in', correctAnswer: ['chalaza'] },
+  
+  // New True/False questions
+  { id: 51, question: 'Los megamurciélagos se alimentan principalmente de frutas.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Verdadero' },
+  { id: 52, question: 'Los micromurciélagos usan solo la vista para cazar.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Falso' },
+  { id: 53, question: 'Los murciélagos generan ultrasonidos en la laringe.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Verdadero' },
+  { id: 54, question: 'Los murciélagos son animales diurnos.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Falso' },
+  { id: 55, question: 'Los murciélagos hibernan durante el invierno.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Verdadero' },
+  { id: 56, question: 'El corazón de la ballena azul es del tamaño de un auto pequeño.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Verdadero' },
+  { id: 57, question: 'Los peces cartilaginosos tienen vejiga natatoria.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Falso' },
+  { id: 58, question: 'Las lampreas tienen mandíbula.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Falso' },
+  { id: 59, question: 'Los peces óseos tienen línea lateral.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Verdadero' },
+  { id: 60, question: 'La lengua de la ballena azul pesa 4 toneladas.', type: 'true_false', options: ['Verdadero', 'Falso'], correctAnswer: 'Verdadero' },
+
+  // New Fill in the blank questions
+  { id: 61, question: 'Los murciélagos se dividen en dos grupos: ___ y ___.', type: 'fill_in', correctAnswer: ['megamurciélagos', 'micromurciélagos'] },
+  { id: 62, question: 'El sistema de orientación por sonidos que usan los murciélagos se llama ___.', type: 'fill_in', correctAnswer: ['ecolocación'] },
+  { id: 63, question: 'Los murciélagos emiten sonidos de alta frecuencia llamados ___.', type: 'fill_in', correctAnswer: ['ultrasonidos'] },
+  { id: 64, question: 'Los murciélagos descansan durante el día en lugares como ___, ___ o ___.', type: 'fill_in', correctAnswer: ['cuevas', 'grietas', 'árboles'] },
+  { id: 65, question: 'Los peces se clasifican en tres tipos: ___, ___ y ___.', type: 'fill_in', correctAnswer: ['óseos', 'cartilaginosos', 'lampreas'] },
+  { id: 66, question: 'Los peces ___ no tienen escamas ni vejiga natatoria.', type: 'fill_in', correctAnswer: ['cartilaginosos'] },
+  { id: 67, question: 'La ___ de la ballena azul puede medir hasta 35 metros.', type: 'fill_in', correctAnswer: ['longitud'] },
+  { id: 68, question: 'Los cachalotes pueden bucear hasta ___ metros de profundidad.', type: 'fill_in', correctAnswer: ['2500'] },
+  { id: 69, question: 'Las aves tienen sacos ___ que las hacen más ligeras para volar.', type: 'fill_in', correctAnswer: ['aéreos'] },
+  { id: 70, question: 'El ___ del huevo sirve para que el pollito pueda respirar.', type: 'fill_in', correctAnswer: ['camisa de aire'] },
+
+  // New Multiple choice questions
+  { 
+    id: 71, 
+    question: '¿Qué tipo de murciélago usa principalmente la ecolocación?', 
+    type: 'multiple_choice', 
+    options: ['Megamurciélagos', 'Micromurciélagos', 'Ambos tipos'], 
+    correctAnswer: 'Micromurciélagos' 
+  },
+  { 
+    id: 72, 
+    question: '¿Por qué los murciélagos son nocturnos?', 
+    type: 'multiple_choice', 
+    options: ['Menos competencia por comida', 'Menos depredadores', 'Ambas son correctas'], 
+    correctAnswer: 'Ambas son correctas' 
+  },
+  { 
+    id: 73, 
+    question: '¿Qué parte del cuerpo del murciélago forma sus alas?', 
+    type: 'multiple_choice', 
+    options: ['Plumas', 'Membrana entre los dedos', 'Escamas'], 
+    correctAnswer: 'Membrana entre los dedos' 
+  },
+  { 
+    id: 74, 
+    question: '¿Qué tipo de pez no tiene escamas?', 
+    type: 'multiple_choice', 
+    options: ['Óseo', 'Cartilaginoso', 'Ambos tipos'], 
+    correctAnswer: 'Cartilaginoso' 
+  },
+  { 
+    id: 75, 
+    question: '¿Qué animal puede vivir más de 100 años?', 
+    type: 'multiple_choice', 
+    options: ['Ballena', 'Murciélago', 'Tiburón'], 
+    correctAnswer: 'Ballena' 
+  },
+  { 
+    id: 76, 
+    question: '¿Qué estructura ayuda a los peces a mantenerse a flote?', 
+    type: 'multiple_choice', 
+    options: ['Vejiga natatoria', 'Línea lateral', 'Aletas'], 
+    correctAnswer: 'Vejiga natatoria' 
+  },
+  { 
+    id: 77, 
+    question: '¿Qué parte del huevo alimenta al embrión?', 
+    type: 'multiple_choice', 
+    options: ['Yema y clara', 'Solo yema', 'Solo clara'], 
+    correctAnswer: 'Yema y clara' 
+  },
+  { 
+    id: 78, 
+    question: '¿Qué tipo de ave tiene pico corto y fuerte?', 
+    type: 'multiple_choice', 
+    options: ['Granívora', 'Insectívora', 'Piscívora'], 
+    correctAnswer: 'Granívora' 
+  },
+  { 
+    id: 79, 
+    question: '¿Qué característica tienen los huesos de las aves?', 
+    type: 'multiple_choice', 
+    options: ['Son muy pesados', 'Son huecos', 'Tienen médula'], 
+    correctAnswer: 'Son huecos' 
+  },
+  { 
+    id: 80, 
+    question: '¿Qué tipo de murciélago se alimenta de sangre?', 
+    type: 'multiple_choice', 
+    options: ['Megamurciélago', 'Micromurciélago', 'Vampiro'], 
+    correctAnswer: 'Vampiro' 
+  },
   { id: 26, question: 'La ___ es transparente y viscosa y alimenta al embrión.', type: 'fill_in', correctAnswer: ['clara'] },
   { id: 27, question: 'La ___ es dura y resistente, cubre el huevo.', type: 'fill_in', correctAnswer: ['cáscara'] },
   { id: 28, question: 'Los ___ tienen caninos grandes para desgarrar carne.', type: 'fill_in', correctAnswer: ['carnívoros'] },
